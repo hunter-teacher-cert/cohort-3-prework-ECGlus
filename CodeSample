@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Main {
+
+  public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    System.out.println("hello world");
+    int x;
+    x = 15;
+
+    String[] newArr = new String[2];
+    newArr[0] = "Yay";
+    newArr[1] = "Oops";
+    String j = newArr[0];
+    String k = newArr[1];
+
+    System.out.println(x);
+    int y;
+    System.out.print("enter a number ");
+    y = s.nextInt();
+    if (y < 8) {
+      System.out.println("You're correct");
+    } else {
+      System.out.println("Try again");
+
+    }
+    boolean r = true;
+    while (r) {
+      System.out.print("enter a number ");
+      y = s.nextInt();
+      if (y == 10) {
+        System.out.println(j);
+        break;
+      } else {
+        System.out.println(k);
+        complete();
+      }
+
+    }
+
+  }
+
+  public static void complete() {
+    System.out.println("we're Done");
+  }
+}
